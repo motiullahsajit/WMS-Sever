@@ -5,10 +5,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node dist/api/index.js",
+    "start": "node dist/app",
     "build": "tsc",
     "watch": "tsc -w",
-    "dev": "nodemon dist/api/index.js",
+    "dev": "nodemon dist/app",
     "vercel-build": "echo hello"
   },
   "author": "",
