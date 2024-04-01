@@ -1,11 +1,11 @@
 import express from "express";
 import { config } from "dotenv";
-import { connectDB } from "./utils/features.js";
-import { errorMiddleware } from "./middlewares/error.js";
+import { connectDB } from "../utils/features.js";
+import { errorMiddleware } from "../middlewares/error.js";
 import morgan from "morgan";
 import cors from "cors";
 
-import routes from "./routes/routes.js";
+import routes from "../routes/routes.js";
 
 config({
   path: "./.env",
