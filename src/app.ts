@@ -14,7 +14,11 @@ config({
 const app = express();
 app.use(express.json());
 app.use(morgan("dev"));
-app.use(cors());
+const corsOptions = {
+  origin: "https://ecosync-zeta.vercel.app",
+};
+
+app.use(cors(corsOptions));
 
 const port = process.env.PORT || 4000;
 const mongoURI = process.env.MONGO_URI || "";
